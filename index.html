@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Styles | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">Alex Styles</h1>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        Hello! I'm Alex Styles, a passionate web developer focused on creating modern, responsive, and user-friendly websites.
+      </p>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid" role="list">
+        <article class="project-card" role="listitem">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-description">A fully responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-description">A weather forecast app using external APIs for real-time data.</p>
+        </article>
+
+        <article class="project-card" role="listitem">
+          <h3 class="project-title">Task Manager</h3>
+          <p class="project-description">A task management tool featuring drag-and-drop and notifications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Contact Me</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required />
+
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Alex Styles. All rights reserved.</p>
+  </footer>
+</body>
+</html>
